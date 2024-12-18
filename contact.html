@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+
+    <!--External CSS-->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <!--Import Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img
+                        src="https://fontmeme.com/permalink/211204/a82f437a983e81ad5e94477269609c40.png" alt="logo"
+                        border="0"></a>
+            </div>
+            <div class="forms">
+                <ul class="top-bar-nav">
+                    <li><a href="register.html">Register</a></li>
+                    <li class="active"><a href="/login">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header>
+            <div class="container">
+                <nav class="nav-bar">
+                    <ul>
+                        <li><a href="./index.html">Home</a> </li>
+                        <li><a href="./movies.html">Movies</a> </li>
+                        <li><a href="./tvshows.html">TV Shows</a> </li>
+                        <li><a href="./contact.html">Contact Us</a> </li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <form class="search">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+    </header>
+
+    <main class="form-content">
+        <div class="form-container">
+            <h2>Send Us a Message</h2>
+            <hr>
+            <form>
+                <!--Full name field-->
+                <label for="name" class="form-text-label">Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" size="30" placeholder="Full Name" class="form-text-input">
+                <!--Email field-->
+                <label for="email" class="form-text-label">Email</label>
+                <input type="email" id="email" name="email" size="30" placeholder="Email Address" class="form-text-input">
+                <!--Phone number-->
+                <label for="phone" class="form-text-label">Phone Number</label>
+                <input type="tel" id="phone" name="phone" size="30" placeholder="Phone Number" class="form-text-input">
+                <!--Checkboxes for contact options-->
+                <div class="contact-group">
+                    <input type="checkbox" id="check1" name="check1">
+                    <label for="check1">Call Me</label>
+                    <input type="checkbox" id="check2" name="check2">
+                    <label for="check2">Email Me</label>
+                </div>
+                <!--Message Type dropdown-->
+                <label for="category" class="form-text-label">Message Type</label>
+                <select id="category" class="form-text-input">
+                    <option>Inquiry</option>
+                    <option>Request</option>
+                    <option>Other</option>
+                </select>
+                <!--Message Text Area-->
+                <label for="message" class="form-text-label">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <!--Submit button-->
+                <input class="btn" type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Copyright 2021 </p>
+        <p class="Company">Movie Hub - Your Watch Begins</p>
+
+    </footer>
+
+</body>
